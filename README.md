@@ -24,3 +24,15 @@ Parameters:
 * FileList				(Required)	list of files to update
 * IncrementValue					amount to increment by; default to 1
 * Position							position of the value to increment (e.g. 1 = major, 2 = minor etc. in 1.1.1 format); default to last
+
+IncrementVersionNumber
+----------------------
+
+Given a version number of the format x.x.x.x, increment the given position by the given amount and return.
+
+Parameters:
+
+* CurrentVersion		(Required)	version number to increment
+* NewVersion			(Output)	modified version number returned
+* IncrementValue					amount to increment by; default to 1
+* Position							position of the value to increment (e.g. 1 = major, 2 = minor etc. in 1.1.1 format); default to last

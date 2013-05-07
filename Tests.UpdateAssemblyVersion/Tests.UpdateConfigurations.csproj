@@ -46,7 +46,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IncrementAssemblyVersionTests.cs" />
-    <Compile Include="TestHelpers.cs" />
+    <Compile Include="IncrementVersionNumberTests.cs" />
+    <Compile Include="BaseTest.cs" />
     <Compile Include="UpdateEndpointTaskTests.cs" />
     <None Include="ExpectedAppConfig.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
