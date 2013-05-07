@@ -45,6 +45,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IncrementAssemblyVersionTests.cs" />
+    <Compile Include="TestHelpers.cs" />
     <Compile Include="UpdateEndpointTaskTests.cs" />
     <None Include="ExpectedAppConfig.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

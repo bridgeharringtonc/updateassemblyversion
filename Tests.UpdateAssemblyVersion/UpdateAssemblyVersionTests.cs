@@ -6,11 +6,8 @@
     using global::UpdateConfigurations;
 
     [TestFixture]
-    public class UpdateAssemblyVersionTests
+    public class UpdateAssemblyVersionTests : BaseTest
     {
-        private const string SourceFile = "./TestAssemblyInfo.txt";
-        private const string ExpectedFile = "./ExpectedAssemblyInfo.txt";
-
         [Test]
         public void when_process_Assembly_with_version()
         {
@@ -27,16 +24,6 @@
 
             Assert.That(source == result);
 
-        }
-
-        private string GetFileContents(string filePath)
-        {
-
-            using (var reader = new StreamReader(filePath))
-            {
-                return reader.ReadToEnd();
-
-            }
         }
     }
 }
